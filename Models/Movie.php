@@ -18,7 +18,5 @@ class Movie extends Model {
 	public function actors() {
 		return $this->belongsToMany(Actor::class);
 	}
-	public function showImage() {
-		return "<img src='https://cdn.theatlantic.com/assets/media/img/mt/2016/07/AP_671014678252/lead_960.jpg?1469555650'>";
-	}
+
 }

@@ -11,4 +11,5 @@ class Actor extends Movie_people {
 	public function movies() {
 		return $this->belongsToMany(Movie::class);
 	}
+
 }

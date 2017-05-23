@@ -18,4 +18,5 @@ class ActorController extends Controller {
 		include "Views/actor/show.view.php";
 	}
 
+
 }
