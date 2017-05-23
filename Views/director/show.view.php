@@ -1,11 +1,11 @@
 <?php get_header($page_title); ?>
 
-<h1><?php echo $director->firstName . " " . $director->lastName; ?></h1>
+<h1><?php echo $director->name(); ?></h1>
 
-<p>Född: <?php echo $director->birthYear; ?></p>
-
+<p>Ålder: <?php echo $director->age(); ?></p>
+<h2>Filmer</h2>
 <?php foreach ($director->movies as $movie) { ?>
-	<h2><?php echo $movie->title; ?></h2>
+	<p><?php echo $movie->title; ?></p>
 
 <?php } ?>
 

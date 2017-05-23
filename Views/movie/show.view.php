@@ -1,6 +1,7 @@
 <?php get_header($page_title); ?>
 
 <h1><?php echo $movie->title; ?></h1>
+	<img src='<?php echo $movie->coverPhoto; ?>'>
 
 <p>Release Year: <?php echo $movie->releaseYear; ?></p>
 <p>Director: <?php echo $movie->director->name(); ?></p>

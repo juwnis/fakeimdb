@@ -4,7 +4,7 @@
 
 <ul>
 	<?php foreach ($actors as $actor) { ?>
-		<li><a href="/fakeimdb/actors/?id=<?php echo $actor->id; ?>"><?php echo $actor->firstName . " " . $actor->lastName . " Age:" . $actor->age(); ?></a></li>
+		<li><a href="/fakeimdb/actors/?id=<?php echo $actor->id; ?>"><?php echo $actor->name(); ?></a></li>
 	<?php } ?>
 </ul>
 
