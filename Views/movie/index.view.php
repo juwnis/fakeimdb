@@ -7,8 +7,6 @@
 		<li><a href="/fakeimdb/movies/?id=<?php echo $movie->id; ?>"><?php echo $movie->title . $movie->category_name; ?></a></li>
 	<?php } ?>
 </ul>
-
-
 <h1>Create Movies</h1>
 <form method="POST">
 	<label for="movie_name">Movie name:</label>
@@ -41,6 +39,5 @@
 
 	<input type="submit" value="Create Movie">
 </form>
-
 
 <?php get_footer(); ?>

@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 class MovieController extends Controller {
 
-	public function index() {
+		public function index() {
 
 		if (isset($_POST['movie_name'])) {
 			$movie = new \App\Models\Movie();
@@ -26,12 +26,9 @@ class MovieController extends Controller {
 
 	public function show($movie_id) {
 		$movie = \App\Models\Movie::find($movie_id);
-
 		$page_title = $movie->title;
 		include "Views/movie/show.view.php";
 	}
-
-
 
 }
 

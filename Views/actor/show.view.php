@@ -1,13 +1,12 @@
 <?php get_header($page_title); ?>
 
 <h1><?php echo $actor->name(); ?></h1>
-	
-<img src='<?php echo $actor->coverPhoto; ?>'> 
-
 <p>Ålder: <?php echo $actor->age(); ?></p>
+<img src='<?php echo $actor->coverPhoto; ?>' style="height:300px;width:300px;">
 <h2>Filmer</h2>
 <?php foreach ($actor->movies as $movie) { ?>
-	<p>Titel: <?php echo $movie->title; ?></p>
+
+	<p>Titel: <a href="http://localhost/fakeimdb/movies/?id=<?php echo $movie->id;?>"><?php echo $movie->title; ?></a></p>
 	<p>Genre: <?php echo $movie->category->category_name; ?></p>
 	<hr>
 
