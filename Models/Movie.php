@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model as Model;
 
 class Movie extends Model {
 
-	protected $fillable = [ "title", "releaseYear", "coverPhoto" ];
+	protected $fillable = [ "title", "releaseYear", "coverPhoto","category_id" ];
 	public $timestamps = false;
 
 	public function director() {
